@@ -9,7 +9,7 @@ function splitBill(bill, people) {
 }
 
 function multiply(a, b) {
-  return a + b;
+  return a * b;
 }
 
 module.exports = { tipCalculator, splitBill, multiply };
