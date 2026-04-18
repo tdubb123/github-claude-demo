@@ -24,8 +24,8 @@ jobs:
             Run `git diff origin/main...HEAD` to see the changes.
             Look for bugs, logic errors, and correctness issues in the changed code.
             Post your findings as a PR comment using: gh pr comment ${{ github.event.pull_request.number }} --body "your findings"
-          additional_permissions: |
-            Bash(gh pr comment:*)
-            Bash(gh pr view:*)
-            Bash(git diff:*)
+          allowed_tools: |
+            Bash(gh pr comment *)
+            Bash(gh pr view *)
+            Bash(git diff *)
           show_full_output: "true"
