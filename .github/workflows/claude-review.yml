@@ -13,12 +13,19 @@ jobs:
       id-token: write
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - uses: anthropics/claude-code-action@v1
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
           prompt: |
-            Run `git diff main` to see the changes in this PR.
+            You are reviewing PR #${{ github.event.pull_request.number }}.
+            Run `git diff origin/main...HEAD` to see the changes.
             Look for bugs, logic errors, and correctness issues in the changed code.
-            Post your findings as a comment using the mcp__github_comment__update_claude_comment tool.
+            Post your findings as a PR comment using: gh pr comment ${{ github.event.pull_request.number }} --body "your findings"
+          additional_permissions: |
+            Bash(gh pr comment:*)
+            Bash(gh pr view:*)
+            Bash(git diff:*)
           show_full_output: "true"
