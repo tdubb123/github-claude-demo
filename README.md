@@ -12,6 +12,20 @@ Every time a pull request is opened or updated, GitHub Actions automatically run
 2. Add a secret named `ANTHROPIC_API_KEY` with your Anthropic API key
 3. Open a PR — Claude will review it automatically
 
+## Functions
+
+This repo includes a small JavaScript utility library in `index.js`:
+
+| Function | Description |
+|----------|-------------|
+| `tipCalculator(bill, tipPercent)` | Calculates tip amount from a bill and tip percentage |
+| `splitBill(bill, people)` | Splits a bill evenly among a number of people |
+| `multiply(a, b)` | Multiplies two numbers |
+| `average(numbers)` | Returns the average of an array of numbers |
+| `celsiusToFahrenheit(celsius)` | Converts Celsius to Fahrenheit |
+| `fahrenheitToCelsius(fahrenheit)` | Converts Fahrenheit to Celsius |
+| `discount(price, percent)` | Applies a percentage discount to a price |
+
 ## Try it
 
 1. Create a new branch
