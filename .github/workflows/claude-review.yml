@@ -18,6 +18,7 @@ jobs:
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
           prompt: |
-            Analyze the diff in this PR and look for bugs, logic errors, and correctness issues.
-            Use the mcp__github_comment__update_claude_comment tool to post your findings as inline comments on the PR.
+            Run `git diff main` to see the changes in this PR.
+            Look for bugs, logic errors, and correctness issues in the changed code.
+            Post your findings as a comment using the mcp__github_comment__update_claude_comment tool.
           show_full_output: "true"
