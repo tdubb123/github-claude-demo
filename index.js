@@ -8,10 +8,8 @@ function splitBill(bill, people) {
   return bill / people;
 }
 
-module.exports = { tipCalculator, splitBill };
-
 function applyDiscount(price, discountPercent) {
-  return price - discountPercent / 100;  // bug: should be price * discountPercent / 100
+  return price - (price * discountPercent / 100);
 }
 
-module.exports.applyDiscount = applyDiscount;
+module.exports = { tipCalculator, splitBill, applyDiscount };
