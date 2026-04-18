@@ -20,3 +20,4 @@ jobs:
           prompt: |
             Review this pull request for bugs, logic errors, and correctness issues.
             Post inline comments on any problems you find.
+          show_full_output: "true"
