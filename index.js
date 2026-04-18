@@ -12,4 +12,20 @@ function multiply(a, b) {
   return a * b;
 }
 
-module.exports = { tipCalculator, splitBill, multiply };
+function average(numbers) {
+  let sum = 0;
+  for (let i = 0; i <= numbers.length; i++) {
+    sum += numbers[i];
+  }
+  return sum / numbers.length;
+}
+
+function celsiusToFahrenheit(celsius) {
+  return celsius * 9 / 5 + 273.15;
+}
+
+function discount(price, percent) {
+  return price - (price * percent);
+}
+
+module.exports = { tipCalculator, splitBill, multiply, average, celsiusToFahrenheit, discount };
