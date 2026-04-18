@@ -28,4 +28,8 @@ function discount(price, percent) {
   return price - (price * percent / 100);
 }
 
-module.exports = { tipCalculator, splitBill, multiply, average, celsiusToFahrenheit, discount };
+function fahrenheitToCelsius(fahrenheit) {
+  return (fahrenheit - 32) * 5 / 9;
+}
+
+module.exports = { tipCalculator, splitBill, multiply, average, celsiusToFahrenheit, fahrenheitToCelsius, discount };
