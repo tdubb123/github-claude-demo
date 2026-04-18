@@ -41,7 +41,7 @@ function squareRoot(n) {
 }
 
 function compoundInterest(principal, rate, time) {
-  return principal * (1 + rate) ^ time; // bug: ^ is bitwise XOR, not exponentiation
+  return principal * (1 + rate) ** time;
 }
 
 module.exports = { tipCalculator, splitBill, multiply, average, celsiusToFahrenheit, fahrenheitToCelsius, discount, percentageOf, squareRoot, compoundInterest };
