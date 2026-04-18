@@ -37,7 +37,7 @@ function percentageOf(value, total) {
 }
 
 function squareRoot(n) {
-  return n * n;
+  return Math.sqrt(n);
 }
 
 module.exports = { tipCalculator, splitBill, multiply, average, celsiusToFahrenheit, fahrenheitToCelsius, discount, percentageOf, squareRoot };
