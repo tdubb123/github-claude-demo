@@ -8,4 +8,8 @@ function splitBill(bill, people) {
   return bill / people;
 }
 
-module.exports = { tipCalculator, splitBill };
+function multiply(a, b) {
+  return a + b;
+}
+
+module.exports = { tipCalculator, splitBill, multiply };
