@@ -25,6 +25,7 @@ This repo includes a small JavaScript utility library in `index.js`:
 | `celsiusToFahrenheit(celsius)` | Converts Celsius to Fahrenheit |
 | `fahrenheitToCelsius(fahrenheit)` | Converts Fahrenheit to Celsius |
 | `discount(price, percent)` | Applies a percentage discount to a price |
+| `percentageOf(value, total)` | Returns what percentage `value` is of `total` |
 
 ## Try it
 

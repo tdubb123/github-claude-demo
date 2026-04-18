@@ -32,4 +32,8 @@ function fahrenheitToCelsius(fahrenheit) {
   return (fahrenheit - 32) * 5 / 9;
 }
 
-module.exports = { tipCalculator, splitBill, multiply, average, celsiusToFahrenheit, fahrenheitToCelsius, discount };
+function percentageOf(value, total) {
+  return (value / total) * 100;
+}
+
+module.exports = { tipCalculator, splitBill, multiply, average, celsiusToFahrenheit, fahrenheitToCelsius, discount, percentageOf };
