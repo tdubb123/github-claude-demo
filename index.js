@@ -1,0 +1,11 @@
+'use strict';
+
+function tipCalculator(bill, tipPercent) {
+  return (bill * tipPercent) / 100;
+}
+
+function splitBill(bill, people) {
+  return bill / people;
+}
+
+module.exports = { tipCalculator, splitBill };
