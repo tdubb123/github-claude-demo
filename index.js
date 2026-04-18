@@ -40,4 +40,8 @@ function squareRoot(n) {
   return Math.sqrt(n);
 }
 
-module.exports = { tipCalculator, splitBill, multiply, average, celsiusToFahrenheit, fahrenheitToCelsius, discount, percentageOf, squareRoot };
+function compoundInterest(principal, rate, time) {
+  return principal * (1 + rate) ^ time; // bug: ^ is bitwise XOR, not exponentiation
+}
+
+module.exports = { tipCalculator, splitBill, multiply, average, celsiusToFahrenheit, fahrenheitToCelsius, discount, percentageOf, squareRoot, compoundInterest };
