@@ -44,4 +44,12 @@ function compoundInterest(principal, rate, time) {
   return principal * (1 + rate) ** time;
 }
 
-module.exports = { tipCalculator, splitBill, multiply, average, celsiusToFahrenheit, fahrenheitToCelsius, discount, percentageOf, squareRoot, compoundInterest };
+function isPrime(n) {
+  if (n < 2) return false;
+  for (let i = 2; i < n; i++) { // bug: should be i <= Math.sqrt(n)
+    if (n % i === 0) return false;
+  }
+  return true;
+}
+
+module.exports = { tipCalculator, splitBill, multiply, average, celsiusToFahrenheit, fahrenheitToCelsius, discount, percentageOf, squareRoot, compoundInterest, isPrime };
